@@ -81,7 +81,7 @@ app.put('/update', function(req, res) {
                 'Content-Length': '',
                 'ETag': '12347'
             })
-            res.status(200).send('<h1>This entry has been edited!</h1>');
+            res.status(200).send('This entry has been edited!Please go back and refresh page');
         }
     });
 });
@@ -108,7 +108,7 @@ app.delete('/delete', function(req, res) {
                     'Content-Length': '',
                     'ETag': '12346'
                 })
-                res.status(200).send('<h1>This phone has been deleted!</h1>');
+                res.status(200).send('This phone has been deleted! Please go back and refresh page');
             });
         }
     });
